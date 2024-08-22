@@ -4,7 +4,7 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #00bfff; /* Azul claro */
     background-color: #000; /* Fondo negro */
-    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+    overflow-x: hidden; /* Evita que el contenido se desborde horizontalmente */
 }
 
 .container {
@@ -15,7 +15,7 @@ body {
 }
 
 header {
-    padding: 60px 20px; /* Agregado padding */
+    padding: 40px;
 }
 
 .navbar {
@@ -41,14 +41,14 @@ header {
 }
 
 .navbar li {
-    margin: 0 10px; /* Ajustar márgenes */
+    margin: 0 15px;
 }
 
 .navbar a {
     color: #00bfff;
     text-decoration: none;
-    font-size: 1em; /* Ajustar tamaño de fuente */
-    padding: 10px;
+    font-size: 1.2em;
+    padding: 15px;
     display: block;
     position: relative;
     transition: color 0.3s, transform 0.3s;
@@ -88,7 +88,7 @@ header {
 .banner {
     position: relative;
     margin-top: 60px; /* Ajustar para que no se superponga con el menú */
-    padding: 20px;
+    padding: 40px;
 }
 
 .banner-line {
@@ -102,33 +102,34 @@ header {
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 3em;
     margin: 0;
     animation: luminiscence 1.5s ease-in-out infinite alternate;
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 1.5em;
     margin: 0;
 }
 
 .services {
-    margin: 50px auto;
-    max-width: 90%;
+    margin: 100px auto;
+    max-width: 800px;
 }
 
 .service-item {
-    margin: 15px 0;
+    margin: 20px 0;
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 2.5em;
     margin: 20px 0;
 }
 
 footer {
     padding: 20px;
-    position: relative; /* Cambiado para no estar fijo */
+    position: absolute;
+    bottom: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     color: #00bfff; /* Azul claro */
@@ -202,6 +203,37 @@ footer {
     }
 
     h1 {
+        font-size: 2.5em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    .services {
+        margin: 50px auto;
+    }
+
+    .service-item {
+        margin: 15px 0;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar a {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+
+    .banner {
+        padding: 15px;
+    }
+
+    h1 {
         font-size: 2em;
     }
 
@@ -219,40 +251,5 @@ footer {
 
     h2 {
         font-size: 1.8em;
-    }
-}
-
-@media (max-width: 480px) {
-    .navbar {
-        padding: 10px;
-    }
-
-    .navbar a {
-        padding: 8px;
-        font-size: 0.9em;
-    }
-
-    .banner {
-        padding: 15px;
-    }
-
-    h1 {
-        font-size: 1.8em;
-    }
-
-    p {
-        font-size: 0.9em;
-    }
-
-    .services {
-        margin: 20px auto;
-    }
-
-    .service-item {
-        margin: 8px 0;
-    }
-
-    h2 {
-        font-size: 1.6em;
     }
 }
