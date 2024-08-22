@@ -178,3 +178,218 @@ ul {
         font-size: 1em;
     }
 }
+/* Estilos Generales */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #00bfff; /* Azul claro */
+    background-color: #000; /* Fondo negro */
+    overflow-x: hidden; /* Deshabilita el scroll horizontal */
+}
+
+header {
+    padding: 40px;
+}
+
+.navbar {
+    position: static; /* El menú es estático */
+    width: 100%;
+    background-color: #111; /* Fondo oscuro para el menú */
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    overflow: hidden;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: #00bfff;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 15px;
+    display: block;
+    position: relative;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.navbar a:hover {
+    color: #1e90ff;
+    transform: scale(1.1);
+}
+
+.navbar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #00bfff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar a:hover::after {
+    transform: scaleX(1);
+}
+
+.menu-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #00bfff;
+    animation: lineMovement 3s linear infinite;
+}
+
+.banner {
+    position: relative;
+    padding: 40px;
+}
+
+.banner-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #00bfff;
+    animation: lineMovement 3s linear infinite;
+}
+
+#sobre-nosotros {
+    background-color: #111; /* Fondo oscuro para la sección */
+    padding: 40px 0;
+    color: #00bfff; /* Azul claro */
+    position: relative;
+}
+
+#sobre-nosotros h1 {
+    font-size: 3em;
+    margin: 0;
+    color: #00bfff; /* Azul claro */
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+.texto {
+    margin: 20px;
+}
+
+.imagen img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin: 20px 0;
+}
+
+p {
+    font-size: 1.5em;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Agrega el fondo animado a la sección */
+.background-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('circuit-background.png') repeat;
+    opacity: 0.1;
+    z-index: 0;
+    animation: circuitAnimation 30s linear infinite;
+}
+
+@keyframes circuitAnimation {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+@keyframes lineMovement {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    #sobre-nosotros h1 {
+        font-size: 2.5em;
+    }
+
+    .contenido {
+        margin: 20px;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    #sobre-nosotros h1 {
+        font-size: 2em;
+    }
+
+    .contenido {
+        margin: 10px;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
