@@ -4,6 +4,8 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #00bfff; /* Azul claro */
     background-color: #000; /* Fondo negro */
+    overflow-x: hidden; /* Deshabilita el scroll horizontal */
+    overflow-y: auto; /* Permite el scroll vertical */
 }
 
 .container {
@@ -11,6 +13,7 @@ body {
     z-index: 1;
     text-align: center;
     color: #00bfff; /* Azul claro */
+    width: 100%;
 }
 
 header {
@@ -18,7 +21,7 @@ header {
 }
 
 .navbar {
-    position: static; /* Cambiado de fixed a static */
+    position: static; /* El menú es estático */
     width: 100%;
     background-color: #111; /* Fondo oscuro para el menú */
     z-index: 2;
@@ -26,6 +29,7 @@ header {
     justify-content: center;
     align-items: center;
     height: 60px;
+    overflow: hidden;
 }
 
 .navbar ul {
