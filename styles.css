@@ -223,3 +223,122 @@ footer {
         font-size: 1.6em;
     }
 }
+/* Media Queries */
+
+/* Para tablets y pantallas medianas (entre 768px y 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .navbar {
+        height: auto; /* Asegurarse de que la altura se ajuste automáticamente */
+    }
+
+    .navbar ul {
+        flex-direction: row; /* Alinea los elementos en una fila */
+    }
+
+    .navbar li {
+        margin: 10px 20px; /* Ajusta el margen para una distribución más equilibrada */
+    }
+
+    .navbar a {
+        padding: 12px;
+        font-size: 1.1em; /* Tamaño de fuente ajustado para pantallas medianas */
+    }
+
+    .banner {
+        padding: 30px; /* Ajusta el padding para que el banner no se vea tan comprimido */
+    }
+
+    h1 {
+        font-size: 2.8em; /* Tamaño de fuente mayor para pantallas medianas */
+    }
+
+    p {
+        font-size: 1.4em; /* Tamaño de fuente ajustado */
+    }
+
+    .services {
+        margin: 60px auto;
+        max-width: 900px; /* Aumenta el ancho máximo para pantallas más grandes */
+    }
+
+    .service-item {
+        margin: 25px 0; /* Ajusta el margen para una mejor visualización */
+    }
+
+    h2 {
+        font-size: 2.2em; /* Ajusta el tamaño del encabezado */
+    }
+}
+
+/* Para pantallas más pequeñas (menores a 768px) */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar li {
+        margin: 10px 0;
+    }
+
+    .navbar a {
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    .banner {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    .services {
+        margin: 30px auto;
+    }
+
+    .service-item {
+        margin: 15px 0;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+}
+
+/* Para pantallas muy pequeñas (menores a 480px) */
+@media (max-width: 480px) {
+    .navbar a {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+
+    .banner {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .services {
+        margin: 20px auto;
+    }
+
+    .service-item {
+        margin: 10px 0;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+}
