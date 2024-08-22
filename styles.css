@@ -175,3 +175,81 @@ footer {
         background-position: 100% 100%;
     }
 }
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    .navbar {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar li {
+        margin: 10px 0;
+    }
+
+    .navbar a {
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    .banner {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    .services {
+        margin: 50px auto;
+    }
+
+    .service-item {
+        margin: 15px 0;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar a {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+
+    .banner {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .services {
+        margin: 30px auto;
+    }
+
+    .service-item {
+        margin: 10px 0;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+}
