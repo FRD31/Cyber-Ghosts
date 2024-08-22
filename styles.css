@@ -11,12 +11,10 @@ body {
     color: #00bfff; /* Azul claro */
     background-color: #000; /* Fondo negro */
     overflow-x: hidden; /* Deshabilita el scroll horizontal */
-    overflow-y: auto; /* Permite el scroll vertical */
 }
 
 .wrapper {
     width: 100%;
-    overflow-x: hidden;
 }
 
 .container {
@@ -24,7 +22,6 @@ body {
     z-index: 1;
     text-align: center;
     color: #00bfff; /* Azul claro */
-    width: 100%;
     max-width: 100vw; /* Asegura que no se desborde horizontalmente */
 }
 
